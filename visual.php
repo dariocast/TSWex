@@ -3,6 +3,6 @@
 <head>
 </head>
 <body style="background-color: <?php echo $bgcolor; ?>; foreground-color: <?php echo $fgcolor; ?>;">
-	questa è la pagina con le preferenze settate, per risettarle vai <a href="preferenze.php"> qui
+	questa &egrave; la pagina con le preferenze settate, per risettarle vai <a href="preferenze.php"> qui
 </body>
 </html>
