@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> TSW </title>
+		<link rel="icon" href="favicon.ico" />
+	</head>
+	<body>
+		<hgroup>
+			<h1>Divertiamoci</h1><br>
+			<h2> un po </h2>
+		</hgroup>
+		<hr noshade>
+		<form action="myForm.js" method="post" id="modulo" target="_blank">
+			<fieldset>
+				<legend> Informazioni personali </legend>
+				<p><label>Nome: </label><input type="text" name="nome" placeholder="Mario" autofocus></p>
+				<p><label>Cognome: </label><input type="text" name="cognome" placeholder="Rossi"></p>
+				<p><label>Data di nascita: </label><input type="date" name="birthdate"></p>
+				<p><label>Breve descrizione di te: </label><textarea name="descrizione" rows="3" col="4"></textarea></p>
+			</fieldset>
+			<hr>
+			Inserisci email: <input type="email" name="mail">
+			<p><input type="submit"> <input type="reset"></p>
+			<fieldset>
+  				<legend> Pizza Size </legend>
+  				<p><label> <input type=radio name=size> Small </label></p>
+ 				<p><label> <input type=radio name=size> Medium </label></p>
+ 				<p><label> <input type=radio name=size> Large </label></p>
+ 			</fieldset>
+ 			<fieldset>
+  				<legend> Pizza Toppings </legend>
+  				<p><label> <input type=checkbox> Bacon </label></p>
+  				<p><label> <input type=checkbox> Extra Cheese </label></p>
+  				<p><label> <input type=checkbox> Onion </label></p>
+  				<p><label> <input type=checkbox> Mushroom </label></p>
+ 			</fieldset>
+		</form>
+	</body>
+</html>

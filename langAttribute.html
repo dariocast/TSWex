@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="application/javascript">
+        var show = function() {
+            var elem = document.getElementById("en");
+            var elem2 = document.getElementById("it");
+            if ("en" == elem.getAttribute("lang")) {
+                elem2.setAttribute("hidden","hidden");
+            }
+
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="en" lang="en"> Hello, how are you?</p>
+<p id="it" lang="it">Ciao, come stai? </p>
+</body>
+</html>
