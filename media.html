@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> TSW </title>
+		<link rel="icon" href="favicon.ico" />
+		<script type="text/javascript" defer>
+		function add(){
+		 var pro = document.getElementById("pro")
+		 pro.getAttribute("value")+=1
+		}
+		for(var i=1;i<100;i++){
+		document.setTimeout(add,1000)}
+	</script>
+	</head>
+	<body>
+	<table>
+	<tr><td><label for="primo"> 2 su 10</label>
+	<td><meter id="primo" value="2" min="0" max="10">2 su of 10</meter>
+	<tr><td><label for="secondo"> 60%</label>
+	<td><meter id="secondo" value="0.6">60%</meter>
+	<tr><td><label for="terzo">progresso</label>
+	<td><progress id="pro" value="1" max="100"></progress>
+	</body>
+</html>

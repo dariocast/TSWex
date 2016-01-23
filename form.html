@@ -13,20 +13,27 @@
 		<form action="myForm.js" method="post" id="modulo" target="_blank">
 			<fieldset>
 				<legend> Informazioni personali </legend>
-				<p><label>Nome: </label><input type="text" name="nome" placeholder="Mario" autofocus></p>
+				<p><label>Nome: </label><input type="text" name="nome" placeholder="Mario" pattern=".*o" required autofocus ></p>
 				<p><label>Cognome: </label><input type="text" name="cognome" placeholder="Rossi"></p>
 				<p><label>Data di nascita: </label><input type="date" name="birthdate"></p>
 				<p><label>Breve descrizione di te: </label><textarea name="descrizione" rows="3" col="4"></textarea></p>
 			</fieldset>
 			<hr>
-			Inserisci email: <input type="email" name="mail">
-			<p><input type="submit"> <input type="reset"></p>
+			Inserisci email: <input type="email" name="mail" required>
+			<p><input type="submit"/> <input type="reset"/><input type="submit" value="Salva" formnovalidate /></p>
+			<label for="tool"> Strumenti:<input list="lista" id="tool" name="tool"/></label>
 			<fieldset>
   				<legend> Pizza Size </legend>
-  				<p><label> <input type=radio name=size> Small </label></p>
- 				<p><label> <input type=radio name=size> Medium </label></p>
- 				<p><label> <input type=radio name=size> Large </label></p>
+  				<p><label> <input type=radio name=size value="small"> Small </label></p>
+ 				<p><label> <input type=radio name=size value="medium"> Medium </label></p>
+ 				<p><label> <input type=radio name=size value="big"> Large </label></p>
  			</fieldset>
+			<label for="sel" style="vertical-align:top">Selezione alternativa:</label>
+				<select id="sel" size="3" multiple>
+					<option value="Martello" label="martello">martello</option>
+					<option value="Chiodi" label="chiodi"/>chiodi</option>
+					<option value="Sega" label="sega"/>sega</option>
+				</select>
  			<fieldset>
   				<legend> Pizza Toppings </legend>
   				<p><label> <input type=checkbox> Bacon </label></p>
@@ -34,6 +41,24 @@
   				<p><label> <input type=checkbox> Onion </label></p>
   				<p><label> <input type=checkbox> Mushroom </label></p>
  			</fieldset>
+			<label for="colore">Scegli un colore: <input type="color" id="colore" name="colore" value="#FFFFFF" list="colorList"/></label>
 		</form>
+		<datalist id="lista">
+			<option value="Martello" label="schiacciatutto"/>
+			<option value="Chiodi" label="Attacca"/>
+			<option value="Sega" label="Per tagliare"/>
+		</datalist>
+		<datalist id="colorList">
+			<option value="#0000FF"/>
+			<option value="#00FF00"/>
+			<option value="#FF0000"/>
+			<option value="#880000"/>
+			<option value="#008800"/>
+			<option value="#FFFFFF"/>
+			<option value="#000000"/>
+			<option value="#AABBCC"/>
+			<option value="#0088FF"/>
+			<option value="#333333"/>
+		</datalist>
 	</body>
 </html>

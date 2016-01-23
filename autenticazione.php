@@ -14,7 +14,7 @@ if(isset($_POST['mail']) && isset($_POST['passwd'])) {
 				header("location: preferenze.php");
 			}
 		}
-	header("location: errore.html");
 	}
+	header("location: errore.html");
 }
 ?>

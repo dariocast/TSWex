@@ -1,0 +1,15 @@
+header {
+	font-family: "System";
+	font-size: 20px;
+	color: #0000CC;
+	text-align: center;
+	}
+
+
+hgroup dl dt {
+	color: #0033FF;
+	}
+
+hgroup dl dd {
+	color: #FF0000;
+	}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Embed contents</title>
+		<meta name="author" content="Dario Castellano" />
+		<meta name="description" content="esercizio con contenuti embedded html5" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<style type="text/css">
+			div {display: inline}
+		</style>
+	</head>
+	<body>
+		<hgroup>
+			<h1> L'italia </h1>
+			<h2> e le sue regioni</h2>
+		</hgroup>
+		<p>
+			Per il sito di dario clicca <a href="http://dariocast.altervista.org" target="frame"> qui</a>
+		</p>
+		<div>
+			<img src="italiamap.gif" alt="mappa d'Italia" width="500" height="500" usemap="#map"/>
+		</div>
+		<map name="map">
+			<area href="primo.html" target="frame" shape="rect" coords="1,1,249,249" alt="primo" />
+			<area href="form.html" target="frame" shape="rect" coords="1,251,249,499" alt="form" />
+			<area href="form2.html" target="frame" shape="rect" coords="251,1,499,249" alt="form2" />
+			<area href="tabella.html" target="frame" shape="rect" coords="251,251,499,499" alt="tabella" />
+		</map>
+		<iframe name="frame" width="300" height="300"> </iframe>
+	</body>
+</html>

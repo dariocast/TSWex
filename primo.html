@@ -3,6 +3,19 @@
 <head>
 <link rel="stylesheet" type="text/css" href="stile.css">
 <title> Primo html</title>
+<style type="text/css">
+iframe {align: middle}
+</style>
+<style media="screen AND (max-width:500px)" type="text/css">
+a {
+background-color: gray;
+color: white;
+padding: 0.5em;
+}
+</style>
+<style media="screen AND (min-width:500px)" type="text/css">
+a {color: red; font-style: italic}
+</style>
 <header>
 <h1 id="TOP"> Hello</h1>
 <h2>World!</h2>
@@ -14,13 +27,13 @@
 </head>
 <body bgcolor=33FF00>
 <hgroup>
-<p> questo &egrave un <strike>difficile </strike>semplice esercizio di <em> HTML </em></p>
-<blockquote> "da un grande <b> potere </b> derivano <br> grandi <u> Responsabilit&agrave</u>" </blockquote>
+<p> questo &egrave un <s>difficile </s>semplice esercizio di <em> <abbr title="HyperText Markup Language">HTML</abbr> </em></p>
+<blockquote cite="https://it.wikipedia.org/wiki/Uomo_Ragno"> "da un grande <b> potere </b> derivano <br> grandi <u> Responsabilit&agrave;</u>" </blockquote>
 cit-<a href="https://it.wikipedia.org/wiki/Uomo_Ragno" target="_blank"> Spiderman </a>
 <hr size=3 noshade>
 <h4> Piccolo glossario dei nomi</h4>
 <dl>
-<dt><b> Nabir Al Bar </b><dd> famoso bevitore arabo
+<dt><b>Nabir Al Bar </b><dd> famoso bevitore arabo
 <dt><b>Teng Cink Ciucc Yank </b><dd> allevatore di cavalli coreano
 <dt><b>Pietro Prezioso </b><dd> orafo italiano
 </dl>
@@ -38,11 +51,11 @@ cit-<a href="https://it.wikipedia.org/wiki/Uomo_Ragno" target="_blank"> Spiderma
 <br><a href="#TOP">torna su</a>
 <hr width=100%>
 <h4 id="AMICI"> Siti amici </h4>
-<ul>
-<li> per il sito di Raffele Sannino, clicca <a href="http://192.168.5.195/~Raffaele.Sannino/esercizio1.html" target="_blank"> qui</a></li>
+<ol reversed type="1">
+<li> per il sito di Mappa, clicca <a href="map.html" target="_blank"> qui</a></li>
 <br>
-<li>per il sito di Francesco De Feo, clicca <a href="http://192.168.5.243/~Francesco/" target="_blank"> qui</a></li>
-<br>
+<li>per il sito di Stile, clicca <a href="styleMedia.html" target="frame"> qui</a></li>
+</ol>
+<iframe name="frame" width="200px" height="100px"></frame>
 <a href="#TOP"> torna su</a>
-</body>
 </html>
